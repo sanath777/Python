@@ -6,4 +6,3 @@ for i in range(0,n):
         num+=1
     print(end="\n")
     
-
