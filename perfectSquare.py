@@ -5,3 +5,5 @@ if (a**2==n):
     print("Perfect Square")
 else:
     print("Not Perfect Square")
+
+    
