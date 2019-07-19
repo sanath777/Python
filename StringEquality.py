@@ -10,3 +10,5 @@ if n1==n2:
     print("Equal")
 else:
     print("Not Equal")
+
+    
