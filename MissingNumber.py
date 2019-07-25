@@ -6,17 +6,8 @@ for i in range(0,n):
     l.append(a)
 l.sort()
 z=l[0]
-x=0
-l1=[]
-for i in range(0,len(l)):
-    if(l[i]==z):
-        z+=1
-    else:
-        x=0
-        l1.append(z)
-        z+=2
-if(x==0):
-    print(l1)
-else:
-    print("No Missing Elements")
+for i in range(l[0],l[-1]):
+    if x not in l:
+        print(x)
+    x+=1
         
