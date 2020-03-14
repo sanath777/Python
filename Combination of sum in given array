@@ -1,0 +1,25 @@
+l=[]
+def sums(num,inputs,partial=[]):
+    s=sum(partial)
+    if s ==inputs: 
+        l.append(partial)
+    if s >=inputs:
+        return None
+    for i in range(len(num)):
+        n =num[i]
+        a=num[i+1:]
+        sums(a,inputs,partial+[n])
+
+if __name__ == "__main__":
+    sums([10,1,2,7,6,1,5],8)
+    l1=l
+    for i in l1:
+        i.sort()
+    l2=[]
+    for i in l1:
+        if i not in l2:
+            l2.append(i)
+    l2=[print(tuple(i),end=' ') for i in l2]
+    
+        
+                
